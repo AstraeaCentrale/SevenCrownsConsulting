@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/AstraeaCentrale/SevenCrownsConsulting#readme",
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "mongodb": "^6.19.0"
   }
 }
