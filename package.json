@@ -2,7 +2,7 @@
   "name": "sevencrownsconsulting",
   "version": "1.0.0",
   "description": "only intended for cosplay innovations and testing; otherwise, based on Re:Dive",
-  "main": "api/nodeInit.js",
+  "main": "./assets/js/nodeInit.js",
   "scripts": {
     "test": "npm test"
   },
@@ -25,6 +25,10 @@
   "homepage": "https://sevencrownsconsulting.vercel.app/",
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
-    "mongodb": "^6.19.0"
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "ioredis": "^5.7.0",
+    "mongodb": "^6.19.0",
+    "mongoose": "^8.18.0"
   }
 }
