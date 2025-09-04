@@ -30,3 +30,7 @@ Thumbs.db
 
 # MongoDB
 /data/db/
+
+# next.js
+/.next/
+/out/
