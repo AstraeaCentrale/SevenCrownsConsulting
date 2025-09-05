@@ -1,4 +1,3 @@
-import Head from "next/head";
 import client from "@/lib/mongodb";
 import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 
@@ -31,10 +30,7 @@ export default function Home({
 
   return (
     <main>
-      <Head>
-        <title>coming soon</title>
-      </Head>
-      <p>Seven Crowns Consulting is opening soon</p>
+      <p>hello world!!</p>
     </main>
   );
 
