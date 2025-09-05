@@ -28,8 +28,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "pages/api/list.ts",
-    "lib/connectToDatabase.ts"
+    "pages/api/list.js",
+    "lib/connectToDatabase.js",
+    "pages/api/wrong.js"
   ],
   "exclude": ["node_modules"]
 }

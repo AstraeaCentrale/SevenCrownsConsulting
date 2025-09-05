@@ -6,8 +6,15 @@ import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 
+
 type ConnectionStatus = {
   isConnected: boolean;
+};
+
+type Restaurant = {
+  _id: string;
+  name: string;
+  cuisine: string;
 };
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,7 +34,7 @@ export const getServerSideProps: GetServerSideProps<
 export default function Home({
   isConnected,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
-  const [restaurants, setRestaurants] = useState ([]);
+  const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
 
   useEffect(() => {
     (async () => {
