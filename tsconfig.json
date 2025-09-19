@@ -29,7 +29,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "pages/api/list.js",
-    "lib/connectToDatabase.js",
+    "lib/connectToDatabase.ts",
     "pages/api/wrong.js"
   ],
   "exclude": ["node_modules"]

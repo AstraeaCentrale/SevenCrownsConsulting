@@ -1,9 +1,11 @@
 * { margin: 0; }
 
-html {
-  background-color: #0c1539;
-}
-body {
-  color: #efbf04;
-  font-family: "Shippori Mincho", serif;
+html { background-color: #0c1539; }
+body { color: white; }
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
 }

@@ -1,0 +1,140 @@
+body { font-family: "Shippori Mincho", serif; }
+
+h1, h2, h3, h4, h5, h6 { color: #efbf04; }
+
+button {
+  font-size: calc(1rem - calc(1rem / 10));
+  padding: 0.5rem 1rem;
+  color: black;
+  border: none;
+  background-color: #efbf04;
+  font-weight: bold;
+  border-radius: 0.75rem;
+}
+button:hover { background-color: #9e7f04; }
+
+header {
+  position: absolute;
+  top: 0;
+  z-index: 5000;
+  background-color: #0c1539d0;
+  color: #efbf04;
+  box-shadow: 0 9.5px 19px #000000a0;
+  width: 100vw;
+  padding: 1rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+header > div {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: #070d22;
+  width: 100vw;
+  padding: 1rem 2.5rem;
+  display: flex;
+  justify-content: right;
+  font-size: calc(1em - calc(1em / 4));
+  text-align: right;
+}
+footer * { margin: 0; }
+footer > div {
+  width: 25rem;
+  max-width: 100%;
+}
+
+.sccLogo {
+  width: auto;
+  max-width: 100%;
+  height: 2.5rem;
+  max-height: 100%;
+}
+
+.navBar * {
+  margin-left: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navBar *:hover { color: #9e7f04; }
+
+.frontPage {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://www.hhp.co.jp/en/images/services/lease/office/osakaent_img02.jpg?ver=001");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.attachDisclaimer {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  cursor: help;
+}
+
+.opnDsclmr { cursor: pointer; }
+.opnDsclmr:hover { color: #efbf04; }
+.opnDsclmr:active { color: #9e7f04; }
+
+.guestServView { width: 100%; }
+.guestServView > div {
+  width: 50rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+}
+
+.fyiBlk {
+  font-family: "Inter", sans-serif;
+  background-color: #00000060;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+input {
+  background-color: unset;
+  border-style: none none solid none;
+  border-width: 2px;
+  border-color: #efbf04;
+  resize: none;
+  width: 100%;
+  font-size: inherit;
+  color: white;
+  font-family: inherit;
+  height: 2em;
+  display: block;
+}
+input:focus { outline: none; }
+
+.snackOVL {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9000;
+}
+.snackbar {
+  background-color: red;
+  color: white;
+  width: max-content;
+  position: absolute;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  visibility: hidden;
+  text-align: center;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 17px;
+  transition: visibility 0.5s, opacity 0.5s linear;
+  box-shadow: 0 9.5px 19px #000000a0;
+  opacity: 0;
+}
+.snackbar.show {
+  visibility: visible;
+  opacity: 1;
+}
